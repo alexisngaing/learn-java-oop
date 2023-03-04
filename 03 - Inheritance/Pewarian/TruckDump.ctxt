@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TruckDump
+comment1.params=no\ thn\ da\ b
+comment1.target=TruckDump(java.lang.String,\ int,\ int,\ int)
+comment2.params=totalBeratTimbang
+comment2.target=int\ hitungBeratMuatan(int)
+numComments=3
