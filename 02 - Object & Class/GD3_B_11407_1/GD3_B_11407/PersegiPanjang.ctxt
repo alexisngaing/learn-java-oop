@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=PersegiPanjang
+comment1.params=
+comment1.target=PersegiPanjang()
+comment2.params=panjang\ lebar
+comment2.target=PersegiPanjang(double,\ double)
+comment3.params=
+comment3.target=double\ luas()
+comment4.params=
+comment4.target=double\ keliling()
+comment5.params=
+comment5.target=double\ getPanjang()
+comment6.params=panjang
+comment6.target=void\ setPanjang(double)
+comment7.params=
+comment7.target=double\ getLebar()
+comment8.params=lebar
+comment8.target=void\ setLebar(double)
+numComments=9
