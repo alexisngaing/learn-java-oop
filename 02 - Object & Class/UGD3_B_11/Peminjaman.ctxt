@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Peminjaman
+comment1.params=
+comment1.target=Peminjaman()
+comment10.params=biayaPerHari
+comment10.target=void\ setBiayaPerHari(int)
+comment11.params=
+comment11.target=int\ totalBiaya()
+comment2.params=buku\ nomorAnggota\ lamaPeminjaman\ biayaPerHari
+comment2.target=Peminjaman(java.lang.String,\ int,\ int,\ int)
+comment3.params=
+comment3.target=java.lang.String\ getBuku()
+comment4.params=buku
+comment4.target=void\ setBuku(java.lang.String)
+comment5.params=
+comment5.target=int\ getNomorAnggota()
+comment6.params=nomorAnggota
+comment6.target=void\ setNomorAnggota(int)
+comment7.params=
+comment7.target=int\ getLamaPeminjaman()
+comment8.params=lamaPeminjaman
+comment8.target=void\ setLamaPeminjaman(int)
+comment9.params=
+comment9.target=int\ getBiayaPerHari()
+numComments=12

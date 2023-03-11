@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Karyawan
+comment1.params=
+comment1.target=Karyawan()
+comment10.params=upah
+comment10.target=void\ setUpah(int)
+comment11.params=
+comment11.target=int\ totalGaji()
+comment2.params=id\ namaKaryawan\ jamKerja\ upah
+comment2.target=Karyawan(java.lang.String,\ java.lang.String,\ int,\ int)
+comment3.params=
+comment3.target=java.lang.String\ getId()
+comment4.params=id
+comment4.target=void\ setId(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getNamaKaryawan()
+comment6.params=namaKaryawan
+comment6.target=void\ setNamaKaryawan(java.lang.String)
+comment7.params=
+comment7.target=int\ getJamKerja()
+comment8.params=jamKerja
+comment8.target=void\ setJamKerja(int)
+comment9.params=
+comment9.target=int\ getUpah()
+numComments=12
