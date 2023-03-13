@@ -66,12 +66,12 @@ public class Peminjaman {
     }
     
     public void tampilPeminjaman() {
-         System.out.println("\n=== Tampil Peminjaman ===");
-         System.out.println("Buku              : " + buku);
-         System.out.println("Nomor Anggota     : " + nomorAnggota);
-         System.out.println("Lama Peminjaman   : " + lamaPeminjaman);
-         System.out.println("Biaya Per Hari    : " + biayaPerHari);
-         System.out.println("Total Biaya       : " + totalBiaya());
-         System.out.println("Jumlah Peminjaman : " + jumlahPeminjaman);
+        System.out.println("\n=== Tampil Peminjaman ===");
+        System.out.println("Buku              : " + buku);
+        System.out.println("Nomor Anggota     : " + nomorAnggota);
+        System.out.println("Lama Peminjaman   : " + lamaPeminjaman);
+        System.out.println("Biaya Per Hari    : " + biayaPerHari);
+        System.out.println("Jumlah Peminjaman : " + jumlahPeminjaman()); // Jumlah ditambahkan dengan data default. Jadi, hasilnya akan 2.
+        System.out.println("Total Biaya       : " + totalBiaya());
     }
 }

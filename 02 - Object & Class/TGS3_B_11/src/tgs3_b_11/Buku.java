@@ -71,7 +71,7 @@ public class Buku {
         System.out.println("Jenis            : " + jenis);
         System.out.println("ISBN             : " + isbn);
         System.out.println("Telat Kembali    : " + telatKembali);
-        System.out.println("Jumlah Buku      : " + jmlBuku());
+        System.out.println("Jumlah Buku      : " + jmlBuku()); // Jumlah ditambahkan dengan data default. Jadi, hasilnya akan 2.
         System.out.println("Denda            : " + bayarDenda());
         
     }

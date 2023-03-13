@@ -71,7 +71,7 @@ public class Mahasiswa {
         System.out.println("NPM              : " + npm);
         System.out.println("Lama Pinjam      : " + lamaPinjam);
         System.out.println("Usia             : " + usia);
-        System.out.println("Jumlah Mahasiswa : " + jumlahMahasiswa());
+        System.out.println("Jumlah Mahasiswa : " + jumlahMahasiswa()); // Jumlah ditambahkan dengan data default. Jadi, hasilnya akan 2.
         System.out.println("Estimasi Pinjam  : " + estimasiPinjam());
     }
 }

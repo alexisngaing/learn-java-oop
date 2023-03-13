@@ -71,7 +71,7 @@ public class Karyawan {
         System.out.println("Nama            : " + namaKaryawan);
         System.out.println("Jam Kerja       : " + jamKerja);
         System.out.println("Upah            : " + upah);
-        System.out.println("Jumlah Karyawan : " + jumlahKaryawan());
+        System.out.println("Jumlah Karyawan : " + jumlahKaryawan()); // Jumlah ditambahkan dengan data default. Jadi, hasilnya akan 2.
         System.out.println("Total Gaji      : " + totalGaji());
     }
 }
