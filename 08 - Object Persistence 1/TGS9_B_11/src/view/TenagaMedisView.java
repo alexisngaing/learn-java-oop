@@ -11,6 +11,7 @@ package view;
 import control.TenagaMedisControl;
 import exception.InputKosongException;
 import exception.IdException;
+import exception.InputKosongException;
 import javax.swing.JOptionPane;
 import model.TenagaMedis;
 
@@ -64,7 +65,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
     }
     
     public void inputKosongException() throws InputKosongException {
-        if (idInput.getText().isEmpty() || namaInput.getText().isEmpty() || tahunInput.getText().isEmpty() || noTeleponInput.getText().isEmpty()) {
+        if (namaInput.getText().isEmpty() || tahunInput.getText().isEmpty() || noTeleponInput.getText().isEmpty()) {
             throw new InputKosongException();
         }
     }
@@ -74,7 +75,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
             throw new IdException();
         }
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -84,6 +85,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         titleBarPanel = new javax.swing.JPanel();
         rsLabel = new javax.swing.JLabel();
         titleLabel = new javax.swing.JLabel();
@@ -127,19 +129,21 @@ public class TenagaMedisView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        rsLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        rsLabel.setText("RSUD INTAN MEDIKA JAYA");
+        titleBarPanel.setBackground(new java.awt.Color(212, 226, 212));
 
-        titleLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        rsLabel.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
+        rsLabel.setText("RS MEDIKA ATMA");
+
+        titleLabel.setFont(new java.awt.Font("SimSun", 1, 14)); // NOI18N
         titleLabel.setText("Object Persistence 1");
 
-        kelompokLabel.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        kelompokLabel.setFont(new java.awt.Font("Sitka Small", 0, 14)); // NOI18N
         kelompokLabel.setText("Kelompok 11");
 
-        npm1Label.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        npm1Label.setFont(new java.awt.Font("Sitka Small", 0, 14)); // NOI18N
         npm1Label.setText("210711407");
 
-        npm2Label.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        npm2Label.setFont(new java.awt.Font("Sitka Small", 0, 14)); // NOI18N
         npm2Label.setText("210711122");
 
         javax.swing.GroupLayout titleBarPanelLayout = new javax.swing.GroupLayout(titleBarPanel);
@@ -147,41 +151,45 @@ public class TenagaMedisView extends javax.swing.JFrame {
         titleBarPanelLayout.setHorizontalGroup(
             titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titleBarPanelLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addContainerGap()
                 .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(titleBarPanelLayout.createSequentialGroup()
                         .addComponent(titleLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(npm1Label)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(npm2Label))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(titleBarPanelLayout.createSequentialGroup()
                         .addComponent(rsLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(kelompokLabel)))
-                .addGap(20, 20, 20))
+                        .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
+                                .addComponent(npm1Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(npm2Label))
+                            .addComponent(kelompokLabel, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addContainerGap())
         );
         titleBarPanelLayout.setVerticalGroup(
             titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(titleBarPanelLayout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addComponent(rsLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(titleLabel)
-                .addGap(0, 6, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
+                    .addGroup(titleBarPanelLayout.createSequentialGroup()
+                        .addComponent(rsLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(titleLabel))
+                    .addGroup(titleBarPanelLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
                         .addComponent(kelompokLabel)
-                        .addGap(34, 34, 34))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
-                        .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(npm1Label)
-                            .addComponent(npm2Label))
-                        .addContainerGap())))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(npm2Label)
+                            .addComponent(npm1Label))))
+                .addGap(33, 33, 33))
         );
 
+        containerPanel.setBackground(new java.awt.Color(252, 248, 232));
+
+        addBtn.setBackground(new java.awt.Color(223, 120, 97));
+        addBtn.setFont(new java.awt.Font("Sitka Text", 1, 12)); // NOI18N
         addBtn.setText("Tambah");
         addBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,6 +197,8 @@ public class TenagaMedisView extends javax.swing.JFrame {
             }
         });
 
+        editBtn.setBackground(new java.awt.Color(223, 120, 97));
+        editBtn.setFont(new java.awt.Font("Sitka Text", 1, 12)); // NOI18N
         editBtn.setText("Edit");
         editBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -196,6 +206,8 @@ public class TenagaMedisView extends javax.swing.JFrame {
             }
         });
 
+        deleteBtn.setBackground(new java.awt.Color(223, 120, 97));
+        deleteBtn.setFont(new java.awt.Font("Sitka Text", 1, 12)); // NOI18N
         deleteBtn.setText("Hapus");
         deleteBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -203,7 +215,9 @@ public class TenagaMedisView extends javax.swing.JFrame {
             }
         });
 
-        idLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        containerInputId.setBackground(new java.awt.Color(236, 179, 144));
+
+        idLabel.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         idLabel.setText("ID Tenaga Medis");
 
         javax.swing.GroupLayout containerInputIdLayout = new javax.swing.GroupLayout(containerInputId);
@@ -229,7 +243,9 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        namaLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        containerInputNama.setBackground(new java.awt.Color(236, 179, 144));
+
+        namaLabel.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         namaLabel.setText("Nama Karyawan");
 
         javax.swing.GroupLayout containerInputNamaLayout = new javax.swing.GroupLayout(containerInputNama);
@@ -255,8 +271,16 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        tahunMasukLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        containerInputTahunMasuk1.setBackground(new java.awt.Color(236, 179, 144));
+
+        tahunMasukLabel1.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         tahunMasukLabel1.setText("Tahun Masuk");
+
+        tahunInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tahunInputActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout containerInputTahunMasuk1Layout = new javax.swing.GroupLayout(containerInputTahunMasuk1);
         containerInputTahunMasuk1.setLayout(containerInputTahunMasuk1Layout);
@@ -281,7 +305,9 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        noTeleponMasukLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        containerInputNoTeleponMasuk.setBackground(new java.awt.Color(236, 179, 144));
+
+        noTeleponMasukLabel.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         noTeleponMasukLabel.setText("Nomor Telepon");
 
         javax.swing.GroupLayout containerInputNoTeleponMasukLayout = new javax.swing.GroupLayout(containerInputNoTeleponMasuk);
@@ -307,6 +333,8 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        searchBtn.setBackground(new java.awt.Color(223, 120, 97));
+        searchBtn.setFont(new java.awt.Font("Sitka Text", 1, 12)); // NOI18N
         searchBtn.setText("Cari");
         searchBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,12 +348,16 @@ public class TenagaMedisView extends javax.swing.JFrame {
             }
         });
 
+        dokterPanel.setBackground(new java.awt.Color(236, 179, 144));
+
         npaidiInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 npaidiInputActionPerformed(evt);
             }
         });
 
+        buttonGroup1.add(dokterRadioBtn);
+        dokterRadioBtn.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         dokterRadioBtn.setText("Dokter");
         dokterRadioBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -333,7 +365,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
             }
         });
 
-        npaidiLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        npaidiLabel.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         npaidiLabel.setText("NPAIDI");
 
         javax.swing.GroupLayout dokterPanelLayout = new javax.swing.GroupLayout(dokterPanel);
@@ -360,12 +392,10 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        nirappniInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nirappniInputActionPerformed(evt);
-            }
-        });
+        perawatPanel.setBackground(new java.awt.Color(236, 179, 144));
 
+        buttonGroup1.add(perawatRadioBtn);
+        perawatRadioBtn.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         perawatRadioBtn.setText("Perawat");
         perawatRadioBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -373,7 +403,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
             }
         });
 
-        nirappniLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        nirappniLabel.setFont(new java.awt.Font("Zilla Slab Medium", 0, 12)); // NOI18N
         nirappniLabel.setText("NIRAPPNI");
 
         javax.swing.GroupLayout perawatPanelLayout = new javax.swing.GroupLayout(perawatPanel);
@@ -400,13 +430,17 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        cancelBtn.setText("Cancel");
+        cancelBtn.setBackground(new java.awt.Color(223, 120, 97));
+        cancelBtn.setFont(new java.awt.Font("Sitka Text", 1, 12)); // NOI18N
+        cancelBtn.setText("Batal");
         cancelBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelBtnActionPerformed(evt);
             }
         });
 
+        saveBtn.setBackground(new java.awt.Color(223, 120, 97));
+        saveBtn.setFont(new java.awt.Font("Sitka Text", 1, 12)); // NOI18N
         saveBtn.setText("Simpan");
         saveBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -422,10 +456,10 @@ public class TenagaMedisView extends javax.swing.JFrame {
         showPerawatTextArea.setRows(5);
         jScrollPane2.setViewportView(showPerawatTextArea);
 
-        showDokterLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        showDokterLabel.setFont(new java.awt.Font("Zilla Slab Medium", 1, 14)); // NOI18N
         showDokterLabel.setText("Data Dokter");
 
-        perawatLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        perawatLabel.setFont(new java.awt.Font("Zilla Slab Medium", 1, 14)); // NOI18N
         perawatLabel.setText("Data Perawat");
 
         javax.swing.GroupLayout containerPanelLayout = new javax.swing.GroupLayout(containerPanel);
@@ -473,13 +507,18 @@ public class TenagaMedisView extends javax.swing.JFrame {
         containerPanelLayout.setVerticalGroup(
             containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(containerPanelLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addBtn)
-                    .addComponent(editBtn)
-                    .addComponent(deleteBtn)
-                    .addComponent(searchBtn)
-                    .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(containerPanelLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(addBtn)
+                            .addComponent(editBtn)
+                            .addComponent(searchBtn)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, containerPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(deleteBtn, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(searchInput, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(containerPanelLayout.createSequentialGroup()
@@ -495,7 +534,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
                         .addComponent(dokterPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(perawatPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cancelBtn)
                     .addComponent(saveBtn))
@@ -520,7 +559,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(titleBarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(titleBarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(containerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -544,6 +583,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
         npaidiInput.setEnabled(true);
         perawatRadioBtn.setSelected(false);
         nirappniInput.setEnabled(false);
+        idInput.setText("DTR-" + tmControl.idDokter());
         
         if (!dokterRadioBtn.isSelected()) {
             npaidiInput.setEnabled(false);
@@ -554,51 +594,62 @@ public class TenagaMedisView extends javax.swing.JFrame {
         nirappniInput.setEnabled(true);
         dokterRadioBtn.setSelected(false);
         npaidiInput.setEnabled(false);
+        idInput.setText("PRT-" + tmControl.idPerawat());
         
         if (!perawatRadioBtn.isSelected()) {
             nirappniInput.setEnabled(false);
         }
     }//GEN-LAST:event_perawatRadioBtnActionPerformed
-
-    private void editBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editBtnActionPerformed
-        setComponent(true);
-        idInput.setEnabled(false);
-        action = "Ubah";
-        
-        if (idInput.getText().contains("DTR-")) {
-            perawatRadioBtn.setEnabled(false);
-            nirappniInput.setEnabled(false);
-        } else {
-            dokterRadioBtn.setEnabled(false);
-            npaidiInput.setEnabled(false);
-        }
-    }//GEN-LAST:event_editBtnActionPerformed
-
-    private void cancelBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelBtnActionPerformed
-        setComponent(false);
-        setEditDeleteBtn(false);
-        clearText();
-    }//GEN-LAST:event_cancelBtnActionPerformed
-
-    private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
-        int getAnswer = JOptionPane.showConfirmDialog(rootPane, "Apakah yakin ingin menghapus data?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
-
-        if (getAnswer == JOptionPane.YES_OPTION) {
-            try {
-                tmControl.deleteDataTenagaMedis(idInput.getText());
-                clearText();
-                showTenagaMedis();
-                JOptionPane.showMessageDialog(null, "Data berhasil dihapus...");
-            } catch (Exception e) {
-                System.out.println("Error : " + e.getMessage());
+    
+    private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
+        try {
+            inputKosongException();
+            
+            TenagaMedis t;
+            String jenis = "";
+            
+            if (action.equals("Tambah")) {
+                if (dokterRadioBtn.isSelected()) {
+                    t = new TenagaMedis("DTR-" + tmControl.idDokter(), namaInput.getText(), "Dokter", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), npaidiInput.getText(), 0);
+                    tmControl.insertDataTenagaMedis(t);
+                } else {
+                    t = new TenagaMedis("PRT-" + tmControl.idPerawat(), namaInput.getText(), "Perawat", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), "", Integer.parseInt(nirappniInput.getText()));
+                    tmControl.insertDataTenagaMedis(t);
+                }
+                JOptionPane.showMessageDialog(null, "Berhasil Tambah Data!");
+            } else {
+                if (idInput.getText().contains("DTR-")) {
+                    t = new TenagaMedis(idInput.getText(), namaInput.getText(), "Dokter", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), npaidiInput.getText(), 0);
+                    tmControl.updateDataTenagaMedis(t, idInput.getText());
+                } else {
+                    t = new TenagaMedis(idInput.getText(), namaInput.getText(), "Perawat", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), "", Integer.parseInt(nirappniInput.getText()));
+                    tmControl.updateDataTenagaMedis(t, idInput.getText());
+                }
+                JOptionPane.showMessageDialog(null, "Berhasil Ubah Data!"); 
+                
+                editBtn.setEnabled(false);
+                deleteBtn.setEnabled(false);
             }
-        } else {
-            JOptionPane.showMessageDialog(null, "Data tidak jadi dihapus!");
+            clearText();
+            showTenagaMedis();
+            setComponent(false);
+            setEditDeleteBtn(false);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Harus Berupa Angka");
+        } catch (InputKosongException e) {
+            JOptionPane.showMessageDialog(this, e.message());
+        } catch(Exception e) {
+            System.out.println(e);
         }
-        
-        editBtn.setEnabled(false);
-        deleteBtn.setEnabled(false);
-    }//GEN-LAST:event_deleteBtnActionPerformed
+    }//GEN-LAST:event_saveBtnActionPerformed
+
+    private void tahunInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tahunInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tahunInputActionPerformed
+
+    private void npaidiInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_npaidiInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_npaidiInputActionPerformed
 
     private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
         setEditDeleteBtn(true);
@@ -632,57 +683,44 @@ public class TenagaMedisView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_searchBtnActionPerformed
 
-    private void npaidiInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_npaidiInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_npaidiInputActionPerformed
+    private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
+        int getAnswer = JOptionPane.showConfirmDialog(rootPane, "Apakah yakin ingin menghapus data?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
 
-    private void nirappniInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nirappniInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nirappniInputActionPerformed
-
-    private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
-        try {
-//            inputKosongException();
-            
-            TenagaMedis t;
-            String jenis = "";
-            
-            if (action.equals("Tambah")) {
-                if (dokterRadioBtn.isSelected()) {
-                    t = new TenagaMedis("DTR-" + tmControl.idDokter(), namaInput.getText(), "Dokter", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), npaidiInput.getText(), 0);
-                    tmControl.insertDataTenagaMedis(t);
-                } else {
-                    t = new TenagaMedis("PRT-" + tmControl.idPerawat(), namaInput.getText(), "Perawat", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), "", Integer.parseInt(nirappniInput.getText()));
-                    tmControl.insertDataTenagaMedis(t);
-                }
-                JOptionPane.showMessageDialog(null, "Berhasil Tambah Data!");
-            } else {
-                if (idInput.getText().contains("DTR-")) {
-                    t = new TenagaMedis(idInput.getText(), namaInput.getText(), "Dokter", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), npaidiInput.getText(), 0);
-                    tmControl.updateDataTenagaMedis(t, idInput.getText());
-                } else {
-                    t = new TenagaMedis(idInput.getText(), namaInput.getText(), "Perawat", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), "", Integer.parseInt(nirappniInput.getText()));
-                    tmControl.updateDataTenagaMedis(t, idInput.getText());
-                }
-                JOptionPane.showMessageDialog(null, "Berhasil Ubah Data!"); 
-                
-                editBtn.setEnabled(false);
-                deleteBtn.setEnabled(false);
+        if (getAnswer == JOptionPane.YES_OPTION) {
+            try {
+                tmControl.deleteDataTenagaMedis(idInput.getText());
+                clearText();
+                showTenagaMedis();
+                JOptionPane.showMessageDialog(null, "Data berhasil dihapus...");
+            } catch (Exception e) {
+                System.err.println("Error : " + e.getMessage());
             }
-            clearText();
-            showTenagaMedis();
-            setComponent(false);
-            setEditDeleteBtn(false);
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Harus Berupa Angka");
-        } 
-//        catch (InputKosongException e) {
-//            JOptionPane.showMessageDialog(this, e.message());
-//        } 
-        catch(Exception e) {
-            System.out.println(e);
+        } else {
+            JOptionPane.showMessageDialog(null, "Data tidak jadi dihapus!");
         }
-    }//GEN-LAST:event_saveBtnActionPerformed
+        editBtn.setEnabled(false);
+        deleteBtn.setEnabled(false);
+    }//GEN-LAST:event_deleteBtnActionPerformed
+
+    private void cancelBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelBtnActionPerformed
+        setComponent(false);
+        setEditDeleteBtn(false);
+        clearText();
+    }//GEN-LAST:event_cancelBtnActionPerformed
+
+    private void editBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editBtnActionPerformed
+        setComponent(true);
+        idInput.setEnabled(false);
+        action = "Ubah";
+        
+        if (idInput.getText().contains("DTR-")) {
+            perawatRadioBtn.setEnabled(false);
+            nirappniInput.setEnabled(false);
+        } else {
+            dokterRadioBtn.setEnabled(false);
+            npaidiInput.setEnabled(false);
+        }
+    }//GEN-LAST:event_editBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -721,6 +759,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addBtn;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton cancelBtn;
     private javax.swing.JPanel containerInputId;
     private javax.swing.JPanel containerInputNama;

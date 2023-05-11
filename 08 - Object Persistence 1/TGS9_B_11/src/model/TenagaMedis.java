@@ -94,6 +94,5 @@ public class TenagaMedis {
                 + "Nomor    : " + this.noTelepon + "\n"
                 + "NIRAPPNI :" + this.ppni + "\n";
         }
-        
     }
 }

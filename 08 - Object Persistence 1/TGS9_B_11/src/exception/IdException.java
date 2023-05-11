@@ -8,7 +8,7 @@ package exception;
  * NPM  : 210711407
  */
 
-public class IdException extends Exception {
+public class IdException extends Exception{
     public String message (){
         return "Id harus berukuran antara 5-8 digit!";
     }

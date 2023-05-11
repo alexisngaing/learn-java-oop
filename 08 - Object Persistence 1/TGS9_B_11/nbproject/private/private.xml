@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/UGD9_B_11/src/model/TenagaMedis.java</file>
-            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/UGD9_B_11/src/exception/InputKosongException.java</file>
-            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/UGD9_B_11/src/dao/TenagaMedisDAO.java</file>
-            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/UGD9_B_11/src/view/TenagaMedisView.java</file>
-            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/UGD9_B_11/src/control/TenagaMedisControl.java</file>
+            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/TGS9_B_11/src/model/TenagaMedis.java</file>
+            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/TGS9_B_11/src/view/TenagaMedisView.java</file>
+            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/TGS9_B_11/src/control/TenagaMedisControl.java</file>
+            <file>file:/D:/Kuliah/Kuliah%204/Pemrograman%20Berorientasi%20Objek/Praktikum/H9/TGS9_B_11/src/connection/DbConnection.java</file>
         </group>
     </open-files>
 </project-private>

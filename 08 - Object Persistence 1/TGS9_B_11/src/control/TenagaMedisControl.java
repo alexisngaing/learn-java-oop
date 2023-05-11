@@ -37,7 +37,7 @@ public class TenagaMedisControl {
         
         String desktopString = "";
         
-        for(int i =0; i < dataTenagaMedis.size(); i++){
+        for (int i =0; i < dataTenagaMedis.size(); i++){
             if(dataTenagaMedis.get(i).getJenis().equals("Perawat"))
                 desktopString = desktopString + dataTenagaMedis.get(i).showData() + "\n";
         }
@@ -60,7 +60,7 @@ public class TenagaMedisControl {
         tDao.deleteTenagaMedis(idTenagaMedis);
     }
     
-    public int idDokter(){
+    public int idDokter() { 
         List<TenagaMedis> dataTenagaMedis = tDao.showTenagaMedis();
                  
         String temp = null;
@@ -75,10 +75,9 @@ public class TenagaMedisControl {
         } else {
             return 1;
         }
-            
     }
     
-    public int idPerawat(){
+    public int idPerawat() {
         List<TenagaMedis> dataTenagaMedis = tDao.showTenagaMedis();
                  
         String temp = null;
