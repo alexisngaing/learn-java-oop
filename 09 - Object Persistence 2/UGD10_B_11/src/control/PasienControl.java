@@ -20,4 +20,16 @@ public class PasienControl {
 
         return dataPasien;
     }
+    
+    public void insertPasien(Pasien p) {
+        pDao.insertPasien(p);
+    }
+    
+    public void updatePasien(Pasien p) {
+        pDao.updatePasien(p);
+    }
+    
+    public void deletePasien(int id) {
+        pDao.deletePasien(id);
+    }
 }

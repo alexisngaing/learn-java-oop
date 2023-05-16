@@ -27,11 +27,11 @@ public class RekamMedisControl {
         return tableRekamMedis;
     }
     
-    public void updateRekamMedis(RekamMedis rm){
+    public void updateRekamMedis(RekamMedis rm) {
         rmDao.updateRekamMedis(rm);
     }
     
-    public void deleteRekamMedis(int id){
+    public void deleteRekamMedis(int id) {
         rmDao.deleteRekamMedis(id);
     }
 }
