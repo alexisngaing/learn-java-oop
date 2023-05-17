@@ -238,6 +238,11 @@ public class RekamMedisView extends javax.swing.JFrame {
 
         pasienIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets.icons/patient(1).png"))); // NOI18N
         pasienIcon.setText("pasienIcon");
+        pasienIcon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pasienIconMouseClicked(evt);
+            }
+        });
 
         pasienIconLabel.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         pasienIconLabel.setForeground(new java.awt.Color(0, 0, 0));
@@ -746,6 +751,12 @@ public class RekamMedisView extends javax.swing.JFrame {
         
         pasienDropdown.setSelectedIndex(indexPasien);
     }//GEN-LAST:event_tableRekamMedisMouseClicked
+
+    private void pasienIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pasienIconMouseClicked
+        PasienView pv = new PasienView();
+        this.dispose();
+        pv.setVisible(true);
+    }//GEN-LAST:event_pasienIconMouseClicked
 
     /**
      * @param args the command line arguments

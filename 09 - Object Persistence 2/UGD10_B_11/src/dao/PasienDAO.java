@@ -20,7 +20,7 @@ public class PasienDAO {
     private DbConnection dbCon = new DbConnection();
     private Connection con;
     
-    public List<Pasien> showListPasien(){
+    public List<Pasien> showListPasien() {
         con = dbCon.makeConnection();
         
         String sql = "SELECT * FROM pasien";
@@ -30,7 +30,7 @@ public class PasienDAO {
         try {
             Statement statement = con.createStatement();
             ResultSet rs = statement.executeQuery(sql);
-            if (rs != null){
+            if (rs != null) {
                 while(rs.next()) {
                     Pasien p = new Pasien(
                             Integer.parseInt(rs.getString("id")),
@@ -43,7 +43,7 @@ public class PasienDAO {
             }
             rs.close();
             statement.close();
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.err.println("Error reading Pasien!");
             System.out.println(e);
         }
@@ -124,7 +124,7 @@ public class PasienDAO {
                 + "'%" + query + "%'"
                 + "OR nama LIKE '%" + query + "%'"
                 + "OR ktp LIKE '%" + query + "%'"
-                + "OR no_telepon '%" + query + "%')";
+                + "OR no_telepon LIKE '%" + query + "%')";
         
         System.out.println("Mengambil data Pasien...");
         
