@@ -22,7 +22,7 @@ public class RekamMedisDAO {
     private DbConnection dbCon = new DbConnection();
     private Connection con;
      
-    public void insertRekamMedis(RekamMedis rm) {
+    public void insertRekamMedis(RekamMedis rm){
         con = dbCon.makeConnection();
         String sql = "INSERT INTO rekam_medis(id_tenaga_medis, id_pasien, diagnosis, total_biaya, tindakan) " 
             + "VALUES (" 
@@ -116,7 +116,7 @@ public class RekamMedisDAO {
                 + "id_pasien = '" + rm.getPasien().getId() + "', "
                 + "diagnosis = '" + rm.getDiagnosis() + "', "
                 + "total_biaya = '" + rm.getTotalBiaya() + "', "
-                + "tindakan = '" + rm.getTindakan() + "'"
+                + "tindakan = '" + rm.getTindakan() + "' "
                 + "WHERE id = '" + rm.getId() + "'";
 
         System.out.println("Update Rekam Medis...");

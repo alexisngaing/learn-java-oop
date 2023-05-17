@@ -569,6 +569,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
         setComponent(true);
         clearText();
+        searchInput.setText("");
         action = "Tambah";
         idInput.setEnabled(false);
     }//GEN-LAST:event_addBtnActionPerformed
