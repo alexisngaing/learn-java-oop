@@ -97,6 +97,7 @@ public class PasienView extends javax.swing.JFrame {
         tenagaMedisPanel = new javax.swing.JPanel();
         tenagaMedisIcon = new javax.swing.JLabel();
         tenagaMedisIconLabel = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
         containerPanel = new javax.swing.JPanel();
         menuPanel = new javax.swing.JPanel();
         addButton = new javax.swing.JButton();
@@ -177,14 +178,13 @@ public class PasienView extends javax.swing.JFrame {
         rekamMedisPanel.setLayout(rekamMedisPanelLayout);
         rekamMedisPanelLayout.setHorizontalGroup(
             rekamMedisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rekamMedisPanelLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(rekamMedisIconLabel)
-                .addGap(8, 8, 8))
             .addGroup(rekamMedisPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(rekamMedisIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rekamMedisPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(rekamMedisIconLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         rekamMedisPanelLayout.setVerticalGroup(
             rekamMedisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -214,13 +214,12 @@ public class PasienView extends javax.swing.JFrame {
         tenagaMedisPanelLayout.setHorizontalGroup(
             tenagaMedisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tenagaMedisPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(tenagaMedisIconLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(tenagaMedisPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(tenagaMedisIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
+            .addGroup(tenagaMedisPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tenagaMedisIconLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         tenagaMedisPanelLayout.setVerticalGroup(
             tenagaMedisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -274,7 +273,12 @@ public class PasienView extends javax.swing.JFrame {
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
         containerPanel.setBackground(new java.awt.Color(252, 248, 232));
+
+        menuPanel.setBackground(new java.awt.Color(212, 226, 212));
 
         addButton.setText("Tambah");
         addButton.addActionListener(new java.awt.event.ActionListener() {
@@ -321,8 +325,10 @@ public class PasienView extends javax.swing.JFrame {
                 .addComponent(editButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(deleteButton)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        searchPanel.setBackground(new java.awt.Color(212, 226, 212));
 
         searchButton.setText("Cari");
         searchButton.addActionListener(new java.awt.event.ActionListener() {
@@ -331,6 +337,7 @@ public class PasienView extends javax.swing.JFrame {
             }
         });
 
+        pasienLabel.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
         pasienLabel.setText("Pasien");
 
         javax.swing.GroupLayout searchPanelLayout = new javax.swing.GroupLayout(searchPanel);
@@ -341,23 +348,23 @@ public class PasienView extends javax.swing.JFrame {
                 .addGroup(searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(searchPanelLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(searchButton))
+                        .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(searchPanelLayout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(pasienLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(pasienLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(searchButton)))
                 .addGap(25, 25, 25))
         );
         searchPanelLayout.setVerticalGroup(
             searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(searchPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(searchButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(searchButton)
                     .addComponent(pasienLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
@@ -435,9 +442,9 @@ public class PasienView extends javax.swing.JFrame {
             containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(containerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(searchPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(searchPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(menuPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(30, 30, 30)
                 .addGroup(containerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(namaLabel)
@@ -462,6 +469,8 @@ public class PasienView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jScrollPane2.setViewportView(containerPanel);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -470,7 +479,7 @@ public class PasienView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(containerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane2))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -479,7 +488,7 @@ public class PasienView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(containerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -632,6 +641,7 @@ public class PasienView extends javax.swing.JFrame {
     private javax.swing.JButton editButton;
     private javax.swing.JPanel headerPanel;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel kelompokLabel;
     private javax.swing.JTextField ktpInput;
     private javax.swing.JLabel ktpLabel;
