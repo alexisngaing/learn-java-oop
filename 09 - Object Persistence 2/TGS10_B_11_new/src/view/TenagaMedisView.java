@@ -87,7 +87,6 @@ public class TenagaMedisView extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         titleBarPanel = new javax.swing.JPanel();
         rsLabel = new javax.swing.JLabel();
-        titleLabel = new javax.swing.JLabel();
         kelompokLabel = new javax.swing.JLabel();
         npm1Label = new javax.swing.JLabel();
         npm2Label = new javax.swing.JLabel();
@@ -100,6 +99,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
         tenagaMedisIconPanel = new javax.swing.JPanel();
         tenagaMedisIconLabel = new javax.swing.JLabel();
         tenagaMedisIcon = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
         containerPanel = new javax.swing.JPanel();
         addBtn = new javax.swing.JButton();
         editBtn = new javax.swing.JButton();
@@ -140,10 +140,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
         titleBarPanel.setBackground(new java.awt.Color(212, 226, 212));
 
         rsLabel.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
-        rsLabel.setText("RS MEDIKA ATMA");
-
-        titleLabel.setFont(new java.awt.Font("SimSun", 1, 14)); // NOI18N
-        titleLabel.setText("Object Persistence 1");
+        rsLabel.setText("RS INTAN MEDIKA");
 
         kelompokLabel.setFont(new java.awt.Font("Sitka Small", 0, 14)); // NOI18N
         kelompokLabel.setText("Kelompok 11");
@@ -153,6 +150,8 @@ public class TenagaMedisView extends javax.swing.JFrame {
 
         npm2Label.setFont(new java.awt.Font("Sitka Small", 0, 14)); // NOI18N
         npm2Label.setText("210711122");
+
+        pasienIconPanel.setBackground(new java.awt.Color(212, 226, 212));
 
         pasienIconLabel.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         pasienIconLabel.setText("PASIEN");
@@ -188,6 +187,8 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        rekamMedisIconPanel.setBackground(new java.awt.Color(212, 226, 212));
+
         rekamMedisIconLabel.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         rekamMedisIconLabel.setText("REKAM MEDIS");
 
@@ -222,6 +223,8 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tenagaMedisIconPanel.setBackground(new java.awt.Color(212, 226, 212));
+
         tenagaMedisIconLabel.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         tenagaMedisIconLabel.setText("TENAGA MEDIS");
 
@@ -237,14 +240,13 @@ public class TenagaMedisView extends javax.swing.JFrame {
         tenagaMedisIconPanel.setLayout(tenagaMedisIconPanelLayout);
         tenagaMedisIconPanelLayout.setHorizontalGroup(
             tenagaMedisIconPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(tenagaMedisIconPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(tenagaMedisIconLabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tenagaMedisIconPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addComponent(tenagaMedisIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
+            .addGroup(tenagaMedisIconPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tenagaMedisIconLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         tenagaMedisIconPanelLayout.setVerticalGroup(
             tenagaMedisIconPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,15 +265,12 @@ public class TenagaMedisView extends javax.swing.JFrame {
             .addGroup(titleBarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(titleLabel)
-                    .addComponent(rsLabel))
-                .addGap(18, 18, 18)
-                .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
+                    .addComponent(rsLabel)
+                    .addComponent(kelompokLabel)
+                    .addGroup(titleBarPanelLayout.createSequentialGroup()
                         .addComponent(npm1Label)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(npm2Label))
-                    .addComponent(kelompokLabel, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addComponent(npm2Label)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(tenagaMedisIconPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -284,22 +283,22 @@ public class TenagaMedisView extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rsLabel)
                     .addGroup(titleBarPanelLayout.createSequentialGroup()
-                        .addComponent(rsLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(titleLabel))
-                    .addGroup(titleBarPanelLayout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(kelompokLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(npm1Label)
-                            .addComponent(npm2Label))))
+                        .addGap(31, 31, 31)
+                        .addComponent(kelompokLabel)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npm1Label)
+                    .addComponent(npm2Label))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(pasienIconPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(rekamMedisIconPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(tenagaMedisIconPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         containerPanel.setBackground(new java.awt.Color(252, 248, 232));
 
@@ -664,19 +663,21 @@ public class TenagaMedisView extends javax.swing.JFrame {
                 .addGap(19, 19, 19))
         );
 
+        jScrollPane3.setViewportView(containerPanel);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(titleBarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(containerPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(titleBarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(containerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 592, Short.MAX_VALUE))
         );
 
         pack();
@@ -906,6 +907,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
     private javax.swing.JLabel idLabel;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JLabel kelompokLabel;
     private javax.swing.JTextField namaInput;
     private javax.swing.JLabel namaLabel;
@@ -920,7 +922,6 @@ public class TenagaMedisView extends javax.swing.JFrame {
     private javax.swing.JLabel pasienIcon;
     private javax.swing.JLabel pasienIconLabel;
     private javax.swing.JPanel pasienIconPanel;
-    private javax.swing.JPanel pasienIconPanel1;
     private javax.swing.JLabel perawatLabel;
     private javax.swing.JPanel perawatPanel;
     private javax.swing.JRadioButton perawatRadioBtn;
@@ -940,6 +941,5 @@ public class TenagaMedisView extends javax.swing.JFrame {
     private javax.swing.JLabel tenagaMedisIconLabel;
     private javax.swing.JPanel tenagaMedisIconPanel;
     private javax.swing.JPanel titleBarPanel;
-    private javax.swing.JLabel titleLabel;
     // End of variables declaration//GEN-END:variables
 }

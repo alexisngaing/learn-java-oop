@@ -162,7 +162,7 @@ public class RekamMedisView extends javax.swing.JFrame {
         titleLabel.setFont(new java.awt.Font("Sitka Small", 1, 36)); // NOI18N
         titleLabel.setForeground(new java.awt.Color(0, 0, 0));
         titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        titleLabel.setText("RS MEDIKA ATMA");
+        titleLabel.setText("RS INTAN MEDIKA");
 
         tenagaMedisPanel.setBackground(new java.awt.Color(252, 248, 232));
         tenagaMedisPanel.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -187,7 +187,7 @@ public class RekamMedisView extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(tenagaMedisIconLabel))
                     .addGroup(tenagaMedisPanelLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
+                        .addGap(33, 33, 33)
                         .addComponent(tenagaMedisIcon)))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
@@ -382,9 +382,9 @@ public class RekamMedisView extends javax.swing.JFrame {
 
         searchPanel.setBackground(new java.awt.Color(148, 180, 159));
 
-        rekamMedisLabel.setFont(new java.awt.Font("Sitka Small", 0, 14)); // NOI18N
+        rekamMedisLabel.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
         rekamMedisLabel.setForeground(new java.awt.Color(0, 0, 0));
-        rekamMedisLabel.setText("Pencarian Rekam Medis");
+        rekamMedisLabel.setText("Rekam Medis");
 
         searchButton.setBackground(new java.awt.Color(236, 179, 144));
         searchButton.setFont(new java.awt.Font("Calisto MT", 1, 12)); // NOI18N
@@ -401,26 +401,26 @@ public class RekamMedisView extends javax.swing.JFrame {
         searchPanelLayout.setHorizontalGroup(
             searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(searchPanelLayout.createSequentialGroup()
-                .addGroup(searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(searchPanelLayout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(searchButton))
-                    .addGroup(searchPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(rekamMedisLabel)))
+                .addGap(32, 32, 32)
+                .addComponent(rekamMedisLabel)
+                .addGap(63, 63, 63)
+                .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(searchButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         searchPanelLayout.setVerticalGroup(
             searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(searchPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(rekamMedisLabel)
-                .addGap(18, 18, 18)
-                .addGroup(searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchButton))
+                .addGroup(searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(searchPanelLayout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addGroup(searchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(searchInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(searchButton)))
+                    .addGroup(searchPanelLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(rekamMedisLabel)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
