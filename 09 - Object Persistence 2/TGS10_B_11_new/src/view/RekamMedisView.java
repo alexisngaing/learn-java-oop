@@ -78,7 +78,7 @@ public class RekamMedisView extends javax.swing.JFrame {
     
     public void clearText() {
         tenagaMedisDropdown.setSelectedIndex(0);
-        pasienDropdown.setSelectedItem(0);
+        pasienDropdown.setSelectedIndex(0);
         diagnosaInput.setText("");
         biayaInput.setText("");
         searchInput.setText("");
@@ -662,18 +662,18 @@ public class RekamMedisView extends javax.swing.JFrame {
         try {
             inputKosongException();
             
-            String tindakan = "-,";
-            String tindakan2 = "-,";
-            String tindakan3 = "-";
+            String tindakan = "";
+            String tindakan2 = "";
+            String tindakan3 = "";
 
             if (obatCheckBox.isSelected()) {
-                tindakan = "Obat";
+                tindakan = "Obat, ";
             }
             if (suntikCheckBox.isSelected()) {
-                tindakan2 = "Suntik";
+                tindakan2 = "Suntik, ";
             }
             if (konsultasiCheckBox.isSelected()) {
-                tindakan3 = "Konsultasi";
+                tindakan3 = "Konsultasi, ";
             }
             
             int selectedIndex;
@@ -723,7 +723,7 @@ public class RekamMedisView extends javax.swing.JFrame {
         
         String tindakan = tableModel.getValueAt(clickedRow, 5).toString();
         
-        if (!(tindakan.substring(0, 1).equals("-"))) {
+        if (!(tindakan.substring(0, 1).equals(""))) {
             obatCheckBox.setSelected(true);
         }
         if (tindakan.contains("Suntik")) {

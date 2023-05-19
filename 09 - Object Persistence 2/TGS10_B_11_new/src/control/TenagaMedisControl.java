@@ -47,7 +47,7 @@ public class TenagaMedisControl {
     
     public TenagaMedis searchTenagaMedis(String idTenagaMedis) {
         TenagaMedis t = null;
-        t = tDao.searchTenagaMedis (idTenagaMedis);
+        t = tDao.searchTenagaMedis(idTenagaMedis);
         
         return t;
     }

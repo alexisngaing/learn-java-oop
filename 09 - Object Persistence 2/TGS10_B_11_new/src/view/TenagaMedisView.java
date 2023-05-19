@@ -728,7 +728,7 @@ public class TenagaMedisView extends javax.swing.JFrame {
                     t = new TenagaMedis("DTR-" + tmControl.idDokter(), namaInput.getText(), "Dokter", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), npaidiInput.getText(), 0);
                     tmControl.insertDataTenagaMedis(t);
                 } else {
-                    t = new TenagaMedis("PRT-" + tmControl.idPerawat(), namaInput.getText(), "Perawat", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), "", Integer.parseInt(nirappniInput.getText()));
+                    t = new TenagaMedis("PRT-" + tmControl.idPerawat(), namaInput.getText(), "Perawat", Integer.parseInt(tahunInput.getText()), noTeleponInput.getText(), "-", Integer.parseInt(nirappniInput.getText()));
                     tmControl.insertDataTenagaMedis(t);
                 }
                 JOptionPane.showMessageDialog(null, "Berhasil Tambah Data!");
