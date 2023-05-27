@@ -3,4 +3,4 @@
 Subject : Object Oriented Programming. 
 Lang : Java
 
-Atma Jaya University. Faculty of Industrial Technology. 2023.
+Atma Jaya Yogyakarta University. Faculty of Industrial Technology. 2023.
