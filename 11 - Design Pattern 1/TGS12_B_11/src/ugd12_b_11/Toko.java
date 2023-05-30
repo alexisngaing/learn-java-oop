@@ -1,6 +1,7 @@
 package ugd12_b_11;
 
 import java.util.ArrayList;
+import exception.JabatanManagerException;
 
 public class Toko {
     private final String namaToko;
@@ -44,12 +45,12 @@ public class Toko {
         Karyawan.space.setLength(Karyawan.space.length() - 3);
     }
     
-    public void SetPenanggungJawab(Manager manager) {
-//        if (!penanggungJawab.getJenis().equalsIgnoreCase("Utama")) {
-//            System.err.println("Jabatan Manager kurang tinggi!");
-//        } else {
+    public void SetPenanggungJawab(Manager manager) throws JabatanManagerException {
+        if (manager.getJenis().equalsIgnoreCase("Utama")){
             this.penanggungJawab = manager;
-//        }
+        } else {
+            throw new JabatanManagerException();
+        }
     }
     
     public void ShowTotalTunjangan() {
