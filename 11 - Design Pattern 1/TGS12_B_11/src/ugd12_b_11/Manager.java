@@ -45,7 +45,7 @@ public class Manager extends Karyawan {
         double total = tunjangan;
         
         for (Karyawan k : kasir) {
-            total = total + k.tunjangan;
+            total += k.GetTunjangan();
         }
         
         return total;
