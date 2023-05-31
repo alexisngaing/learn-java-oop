@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/02 - Object &amp; Class.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/02 - Object &amp; Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 - Inheritance/03 - Inheritance.iml" filepath="$PROJECT_DIR$/03 - Inheritance/03 - Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Agregasi/Agregasi.iml" filepath="$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Agregasi/Agregasi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Asosiasi1/Asosiasi1.iml" filepath="$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Asosiasi1/Asosiasi1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Asosiasi2/Asosiasi2.iml" filepath="$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Asosiasi2/Asosiasi2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/Composite/Composite.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/Composite/Composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/CompositeObserver/CompositeObserver.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/CompositeObserver/CompositeObserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07 - Exception Handling/Discussion/Discussion.iml" filepath="$PROJECT_DIR$/07 - Exception Handling/Discussion/Discussion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06 - Generic Class/Discussion/Discussion1.iml" filepath="$PROJECT_DIR$/06 - Generic Class/Discussion/Discussion1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07 - Exception Handling/Diskusi 74 Mahasiswa/Diskusi 74 Mahasiswa.iml" filepath="$PROJECT_DIR$/07 - Exception Handling/Diskusi 74 Mahasiswa/Diskusi 74 Mahasiswa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08 - Object Persistence 1/Diskusi8/Diskusi8.iml" filepath="$PROJECT_DIR$/08 - Object Persistence 1/Diskusi8/Diskusi8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09 - Object Persistence 2/Diskusi8_OP2/Diskusi8_OP2.iml" filepath="$PROJECT_DIR$/09 - Object Persistence 2/Diskusi8_OP2/Diskusi8_OP2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12 - Design Pattern 2/FactoryPattern/FactoryPattern.iml" filepath="$PROJECT_DIR$/12 - Design Pattern 2/FactoryPattern/FactoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/GD12_B_11407_1/GD12_B_11407_1.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/GD12_B_11407_1/GD12_B_11407_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/GD12_B_11407_2/GD12_B_11407_2.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/GD12_B_11407_2/GD12_B_11407_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/GD3_B_11407_1/GD3_B_11407_1.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/GD3_B_11407_1/GD3_B_11407_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/GD3_B_11407_2/GD3_B_11407_2.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/GD3_B_11407_2/GD3_B_11407_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 - Inheritance/GD4_B_11407/GD4_B_11407.iml" filepath="$PROJECT_DIR$/03 - Inheritance/GD4_B_11407/GD4_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/GD5_B_11407_1/GD5_B_11407_1.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/GD5_B_11407_1/GD5_B_11407_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/GD5_B_11407_2/GD5_B_11407_2.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/GD5_B_11407_2/GD5_B_11407_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Relation/GD6_B_11407 - Copy/GD6_B_11407 - Copy.iml" filepath="$PROJECT_DIR$/05 - Relation/GD6_B_11407 - Copy/GD6_B_11407 - Copy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06 - Generic Class/GD7_B_11407/GD7_B_11407.iml" filepath="$PROJECT_DIR$/06 - Generic Class/GD7_B_11407/GD7_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07 - Exception Handling/GD8_B_11407/GD8_B_11407.iml" filepath="$PROJECT_DIR$/07 - Exception Handling/GD8_B_11407/GD8_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08 - Object Persistence 1/GD9_B_11407/GD9_B_11407.iml" filepath="$PROJECT_DIR$/08 - Object Persistence 1/GD9_B_11407/GD9_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/Guided/GDISP_B_11407/GDISP_B_11407.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/Guided/GDISP_B_11407/GDISP_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/Guided/GDKSP_2_1407_Net/GDKSP_2_1407_Net.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/Guided/GDKSP_2_1407_Net/GDKSP_2_1407_Net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/Guided/GDNonSOLID_B_11407/GDNonSOLID_B_11407.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/Guided/GDNonSOLID_B_11407/GDNonSOLID_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/Guided/GDOLD_B_11407/GDOLD_B_11407.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/Guided/GDOLD_B_11407/GDOLD_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/Guided/GDSRP_B_11407/GDSRP_B_11407.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/Guided/GDSRP_B_11407/GDSRP_B_11407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09 - Object Persistence 2/GD_OP2_B_1407/GD_OP2_B_1407.iml" filepath="$PROJECT_DIR$/09 - Object Persistence 2/GD_OP2_B_1407/GD_OP2_B_1407.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 - Inheritance/Guided/Guided.iml" filepath="$PROJECT_DIR$/03 - Inheritance/Guided/Guided.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/Guided/Guided1.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/Guided/Guided1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/Diskusi10/ISP/ISP.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/Diskusi10/ISP/ISP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Komposisi/Komposisi.iml" filepath="$PROJECT_DIR$/05 - Relation/Diskusi Kelompok/Komposisi/Komposisi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Learn Java OOP.iml" filepath="$PROJECT_DIR$/.idea/Learn Java OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/Latihan/Luas_Lingkaran/Luas_Lingkaran.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/Latihan/Luas_Lingkaran/Luas_Lingkaran.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/Latihan/Mahasiswa/Mahasiswa.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/Latihan/Mahasiswa/Mahasiswa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/Diskusi10/NonOLD/NonOLD.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/Diskusi10/NonOLD/NonOLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/NonObserver/NonObserver.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/NonObserver/NonObserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/Observer/Observer.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/Observer/Observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/Polimorfisme/Polimorfisme.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/Polimorfisme/Polimorfisme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/PolimorfismeDinamis/PolimorfismeDinamis.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/PolimorfismeDinamis/PolimorfismeDinamis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/PolimorfismeDinamisInterface/PolimorfismeDinamisInterface.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/PolimorfismeDinamisInterface/PolimorfismeDinamisInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/PolimorfismeDinamisKelasAbstrak/PolimorfismeDinamisKelasAbstrak.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/PolimorfismeDinamisKelasAbstrak/PolimorfismeDinamisKelasAbstrak.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/Diskusi10/SRP/SRP.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/Diskusi10/SRP/SRP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12 - Design Pattern 2/SingletonPattern/SingletonPattern.iml" filepath="$PROJECT_DIR$/12 - Design Pattern 2/SingletonPattern/SingletonPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09 - Object Persistence 2/TGS10_B_11/TGS10_B_11.iml" filepath="$PROJECT_DIR$/09 - Object Persistence 2/TGS10_B_11/TGS10_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09 - Object Persistence 2/TGS10_B_11_new/TGS10_B_11_new.iml" filepath="$PROJECT_DIR$/09 - Object Persistence 2/TGS10_B_11_new/TGS10_B_11_new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/TGS12_B_11/TGS12_B_11.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/TGS12_B_11/TGS12_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Object &amp; Class/TGS3_B_11/TGS3_B_11.iml" filepath="$PROJECT_DIR$/02 - Object &amp; Class/TGS3_B_11/TGS3_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 - Inheritance/TGS4_B_11/TGS4_B_11.iml" filepath="$PROJECT_DIR$/03 - Inheritance/TGS4_B_11/TGS4_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/TGS5_B_11/TGS5_B_11.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/TGS5_B_11/TGS5_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/TGS5_B_11_Update with Intellij/TGS5_B_11_Update with Intellij.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/TGS5_B_11_Update with Intellij/TGS5_B_11_Update with Intellij.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Relation/TGS6_B_11/TGS6_B_11.iml" filepath="$PROJECT_DIR$/05 - Relation/TGS6_B_11/TGS6_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06 - Generic Class/TGS7_B_11/TGS7_B_11.iml" filepath="$PROJECT_DIR$/06 - Generic Class/TGS7_B_11/TGS7_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07 - Exception Handling/TGS8_B_11/TGS8_B_11.iml" filepath="$PROJECT_DIR$/07 - Exception Handling/TGS8_B_11/TGS8_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08 - Object Persistence 1/TGS9_B_11/TGS9_B_11.iml" filepath="$PROJECT_DIR$/08 - Object Persistence 1/TGS9_B_11/TGS9_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09 - Object Persistence 2/UGD10_B_11/UGD10_B_11.iml" filepath="$PROJECT_DIR$/09 - Object Persistence 2/UGD10_B_11/UGD10_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/UGD11_B_11/UGD11_B_11.iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/UGD11_B_11/UGD11_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Solid Pattern/UGD11_B_11 (1)/UGD11_B_11 (1).iml" filepath="$PROJECT_DIR$/10 - Solid Pattern/UGD11_B_11 (1)/UGD11_B_11 (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Design Pattern 1/UGD12_B_11/UGD12_B_11.iml" filepath="$PROJECT_DIR$/11 - Design Pattern 1/UGD12_B_11/UGD12_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 - Inheritance/UGD4_B_11/UGD4_B_11.iml" filepath="$PROJECT_DIR$/03 - Inheritance/UGD4_B_11/UGD4_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 - Inheritance/Excercises/UGD4_Latihan/UGD4_Latihan.iml" filepath="$PROJECT_DIR$/03 - Inheritance/Excercises/UGD4_Latihan/UGD4_Latihan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 - Inheritance/Excercises/UGD4_Latihan (2)/UGD4_Latihan (2).iml" filepath="$PROJECT_DIR$/03 - Inheritance/Excercises/UGD4_Latihan (2)/UGD4_Latihan (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 - Polimorfism/UGD5_B_11/UGD5_B_11.iml" filepath="$PROJECT_DIR$/04 - Polimorfism/UGD5_B_11/UGD5_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Relation/UGD6_B_11/UGD6_B_11.iml" filepath="$PROJECT_DIR$/05 - Relation/UGD6_B_11/UGD6_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06 - Generic Class/UGD7_B_11/UGD7_B_11.iml" filepath="$PROJECT_DIR$/06 - Generic Class/UGD7_B_11/UGD7_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07 - Exception Handling/UGD8_B_11/UGD8_B_11.iml" filepath="$PROJECT_DIR$/07 - Exception Handling/UGD8_B_11/UGD8_B_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08 - Object Persistence 1/UGD9_B_11/UGD9_B_11.iml" filepath="$PROJECT_DIR$/08 - Object Persistence 1/UGD9_B_11/UGD9_B_11.iml" />
+    </modules>
+  </component>
+</project>
